@@ -24,7 +24,8 @@ jobs:
         gemfile: [
           "gemfiles/jruby.gemfile",
           "gemfiles/rails_5_2.gemfile",
-          "gemfiles/rails_6_0.gemfile"
+          "gemfiles/rails_6_0.gemfile",
+          "gemfiles/rails_6_1.gemfile"
         ]
 
         allow_failures:
@@ -35,6 +36,8 @@ jobs:
             gemfile: gemfiles/rails_5_2.gemfile
           - ruby: jruby
             gemfile: gemfiles/rails_6_0.gemfile
+          - ruby: jruby
+            gemfile: gemfiles/rails_6_1.gemfile
           - ruby: jruby
             gemfile: gemfiles/railsmaster.gemfile
 
